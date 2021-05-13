@@ -78,10 +78,11 @@ Como recomendación, es muy útil buscar y escribir todos los valores que exista
 ```
 
 ## Finalmente, para cada categoría usaremos la sintaxis de la siguiente línea, 
-- case ‘valor de la propiedad’ : return {
-- color: ‘valor de color HTML”,
--  fillOpacity: valor de transparencia
--  }
+``` html
+<script>
+case 'Qhoal': return {color:'#fff5dd',fillOpacity: .5};
+</script>
+```
 ## Se cierran todos los corchetes abiertos y nos aseguraamos qe esté el comando .addTo(map);
 
 ``` html
