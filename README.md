@@ -5,29 +5,42 @@ Los estilos de un mapa son una parte fundamental, sobre todo si se trata de un m
 ![screenshot](https://raw.githubusercontent.com/sampach95/CategorizarElementosAPartirDeUnaPropiedad./master/img/Imagen1.png )
 ## Por el momento, solamente echemos un vistazo a las columnas y como las puedes encontrar en el código.
 Si te das cuenta las clases del código siguen el mismo orden que las columnas en la tabla de atributos, la sintaxis es muy sencilla:
-“CLASE o PROPIEDAD”: “VALOR DE LA PROPIEDAD”,
-“CLASE o PROPIEDAD 2”: “VALOR DE LA PROPIEDAD”, ….
-“CLASE o PROPIEDAD N”: “VALOR DE LA PROPIEDAD”
+- “CLASE o PROPIEDAD”: “VALOR DE LA PROPIEDAD”,
+- “CLASE o PROPIEDAD 2”: “VALOR DE LA PROPIEDAD”, ….
+- “CLASE o PROPIEDAD N”: “VALOR DE LA PROPIEDAD”
 ## Ya que te has familiarizado con los nombres de las clases y sus valores, podemos generar estilos a partir de los valores de una propiedad, en este caso escogimos la Clave cuyos valores son los siguientes:
-•	Qhoal
-•	Qhoco
-•	TplQptB
-•	TplQptCgp-Ar
-•	TeGd-D
-•	TeoCgp
-•	TmplA-B
-•	TplA-Da
-•	TplR-TR
-•	TplTR-TDa
-•	ToR-TR
-•	KapceCz-Bro
-•	KiCz-Lu
-•	KsLu-Cz
-•	JtKvLu-Cz
+- Qhoal
+- Qhoco
+- TplQptB
+- plQptCgp-Ar
+- TeGd-D
+- TeoCgp
+- TmplA-B
+- TplA-Da
+- TplR-TR
+- TplTR-TDa
+- ToR-TR
+- KapceCz-Bro
+- KiCz-Lu
+- KsLu-Cz
+- JtKvLu-Cz
+
+
 Como recomendación, es muy útil buscar y escribir todos los valores que existan de la propiedad, de esta manera llevarás un control, y notar cuando alguna te haga falta mientras vas trabajando en el mapa. 
 
 ## ¿Recuerdas esta sección del código?, aquí es donde haremos los cambios para representar cada categoría
-
+``` html
+<script>
+<!-- ----- CAPAS VECTORIALES------	 -->
+	var geology = L.geoJson(geology).addTo(map);
+	
+	var contact = L.geoJson(contact,{
+		style: contact_style
+		}).addTo (map);
+  
+  
+</script>
+```
 
 
 
@@ -65,10 +78,10 @@ Como recomendación, es muy útil buscar y escribir todos los valores que exista
 ```
 
 ## Finalmente, para cada categoría usaremos la sintaxis de la siguiente línea, 
-case ‘valor de la propiedad’ : return {
-color: ‘valor de color HTML”, 
-fillOpacity: valor de transparencia
-}
+- case ‘valor de la propiedad’ : return {
+- color: ‘valor de color HTML”,
+-  fillOpacity: valor de transparencia
+-  }
 ## Se cierran todos los corchetes abiertos y nos aseguraamos qe esté el comando .addTo(map);
 
 ``` html
