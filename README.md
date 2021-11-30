@@ -101,8 +101,8 @@ case 'Qhoal': return {color:'#fff5dd',fillOpacity: .5};
 
 ## Lo siguiente sería encontrar los colores adecuados para el mapa y terminar de declarar los casos, para cada valor de la propiedad clave.  pero eso será en la siguiente parte. 
 
-Siguiente Tutorial
+Siguiente Tutorial https://github.com/IngGeolAsist/EstilosParaCadaCategoria
 
-Haz click en el siguiente enlace para volver a la pagina inicial https://github.com/sampach95/ComoCrearMapasEnLaWebConLeaflet
+Haz click en el siguiente enlace para volver a la pagina inicial https://github.com/IngGeolAsist/ComoCrearMapasEnLaWebConLeaflet
 
 
